@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura Chaves Cerdas, PhD, MPP — Curriculum Vitae</title>
+<meta name="description" content="Academic CV of Laura Chaves Cerdas, PhD, MPP — Health Policy and Management, UAMS">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF9F6;
+    --ink:#1B2A28;
+    --ink-soft:#3F4E4C;
+    --rule:#D8D2C4;
+    --teal:#2B6B63;
+    --teal-deep:#173F3A;
+    --gold:#A9814A;
+    --card:#FFFFFF;
+    --max-w:920px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--teal-deep);}
+  a:hover{color:var(--teal);}
+
+  h1,h2,h3{
+    font-family:'Source Serif 4', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    margin:0;
+  }
+
+  .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:-0.01em;}
+
+  /* ---------- Layout shell ---------- */
+  .shell{
+    display:grid;
+    grid-template-columns:230px 1fr;
+    max-width:1240px;
+    margin:0 auto;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    position:sticky;
+    top:0;
+    align-self:start;
+    height:100vh;
+    padding:2.75rem 1.5rem 2rem 2.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-right:1px solid var(--rule);
+  }
+  .sidebar-top .initials{
+    font-family:'Source Serif 4', serif;
+    font-size:1.9rem;
+    font-weight:700;
+    color:var(--teal-deep);
+    line-height:1;
+  }
+  .sidebar-top .name-full{
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    margin-top:0.5rem;
+    line-height:1.35;
+  }
+  nav.toc{margin-top:2.5rem;}
+  nav.toc a{
+    display:block;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:0.32rem 0;
+    border-left:2px solid transparent;
+    padding-left:0.7rem;
+    margin-left:-0.72rem;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  nav.toc a:hover, nav.toc a.active{
+    color:var(--teal-deep);
+    border-left-color:var(--gold);
+  }
+  .sidebar-bottom{font-size:0.72rem; color:var(--ink-soft);}
+  .sidebar-bottom a{color:var(--ink-soft); text-decoration:underline;}
+
+  /* ---------- Main content ---------- */
+  main{padding:2.75rem 3rem 6rem;}
+  .header-block{max-width:var(--max-w);}
+  .header-block h1{font-size:2.5rem;}
+  .role-line{
+    font-size:1.05rem;
+    color:var(--teal-deep);
+    margin-top:0.4rem;
+    font-weight:500;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.35rem 1.4rem;
+    margin-top:1.1rem;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+  }
+  .contact-row a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--rule);}
+  .contact-row a:hover{color:var(--teal-deep); border-color:var(--teal);}
+
+  /* signature element: career trajectory strip */
+  .trajectory{
+    margin-top:2.4rem;
+    padding-top:1.6rem;
+    border-top:1px solid var(--rule);
+  }
+  .trajectory-label{
+    font-size:0.7rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--gold);
+    margin-bottom:0.9rem;
+    font-weight:600;
+  }
+  .trail{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:0;
+    font-size:0.82rem;
+  }
+  .stop{display:flex; align-items:center; gap:0.55rem;}
+  .stop .dot{
+    width:7px; height:7px; border-radius:50%;
+    background:var(--teal); flex-shrink:0;
+  }
+  .stop .place{color:var(--ink); font-weight:500;}
+  .stop .yr{color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; font-size:0.72rem;}
+  .connector{width:26px; height:1px; background:var(--rule); margin:0 0.7rem;}
+
+  section{max-width:var(--max-w); margin-top:3.4rem; scroll-margin-top:2rem;}
+  section h2{
+    font-size:1.35rem;
+    display:flex;
+    align-items:baseline;
+    gap:0.7rem;
+  }
+  section h2 .num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.78rem;
+    color:var(--gold);
+    font-weight:500;
+  }
+  section > .intro{color:var(--ink-soft); font-size:0.92rem; margin-top:0.5rem; max-width:60ch;}
+
+  .entry{
+    padding:1.1rem 0;
+    border-top:1px solid var(--rule);
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:1.4rem;
+  }
+  .entry:last-child{padding-bottom:0;}
+  .entry .when{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    padding-top:0.15rem;
+  }
+  .entry .what .title{font-weight:600; font-size:1rem;}
+  .entry .what .org{color:var(--teal-deep); font-size:0.92rem; margin-top:0.1rem;}
+  .entry .what .loc{color:var(--ink-soft); font-size:0.82rem; margin-top:0.1rem;}
+  .entry .what .desc{font-size:0.88rem; color:var(--ink-soft); margin-top:0.5rem;}
+  .entry .what ul{margin:0.5rem 0 0; padding-left:1.1rem; font-size:0.88rem; color:var(--ink-soft);}
+  .entry .what ul li{margin-bottom:0.2rem;}
+
+  /* publications list */
+  .pub-list{border-top:1px solid var(--rule);}
+  .pub{
+    padding:1rem 0;
+    border-bottom:1px solid var(--rule);
+    font-size:0.9rem;
+    display:grid;
+    grid-template-columns:56px 1fr;
+    gap:1rem;
+  }
+  .pub .yr{font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:0.8rem; padding-top:0.1rem;}
+  .pub .cite .authors{color:var(--ink);}
+  .pub .cite .venue{color:var(--teal-deep); font-style:italic;}
+  .pub .cite a{font-size:0.8rem;}
+  .pub.first-author{background:linear-gradient(90deg, rgba(43,107,99,0.05), transparent 60%);}
+
+  .tag-row{display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.9rem;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;
+    color:var(--teal-deep);
+    background:rgba(43,107,99,0.08);
+    padding:0.25rem 0.6rem;
+    border-radius:3px;
+  }
+
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;}
+
+  .footer-note{
+    max-width:var(--max-w);
+    margin-top:4rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    font-size:0.78rem;
+    color:var(--ink-soft);
+  }
+
+  /* mobile */
+  .menu-toggle{display:none;}
+  @media (max-width: 860px){
+    .shell{grid-template-columns:1fr;}
+    .sidebar{
+      position:relative;
+      height:auto;
+      border-right:none;
+      border-bottom:1px solid var(--rule);
+      padding:1.5rem 1.5rem 1rem;
+    }
+    nav.toc{
+      margin-top:1rem;
+      display:none;
+      flex-direction:column;
+    }
+    nav.toc.open{display:flex;}
+    .menu-toggle{
+      display:inline-block;
+      margin-top:1rem;
+      font-family:'IBM Plex Mono',monospace;
+      font-size:0.75rem;
+      background:none;
+      border:1px solid var(--rule);
+      color:var(--ink-soft);
+      padding:0.4rem 0.8rem;
+      border-radius:3px;
+      cursor:pointer;
+    }
+    .sidebar-bottom{margin-top:1rem;}
+    main{padding:2rem 1.4rem 4rem;}
+    .header-block h1{font-size:1.9rem;}
+    .entry{grid-template-columns:1fr; gap:0.3rem;}
+    .pub{grid-template-columns:1fr; gap:0.3rem;}
+    .trail{gap:0.5rem 0;}
+    .connector{display:none;}
+    .stop{width:100%;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="initials">LCC</div>
+      <div class="name-full">Laura Chaves Cerdas, PhD, MPP<br>Health Policy &amp; Management, UAMS</div>
+      <button class="menu-toggle" onclick="document.querySelector('nav.toc').classList.toggle('open')">Sections ▾</button>
+      <nav class="toc">
+        <a href="#positions">Positions</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#grants">Funded Research</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      4301 West Markham Street<br>
+      Little Rock, AR 72205<br><br>
+      <a href="mailto:lchavescerdas@uams.edu">lchavescerdas@uams.edu</a><br>
+      <a href="https://www.linkedin.com/in/laura-chaves-cerdas" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </aside>
+
+  <main>
+
+    <div class="header-block">
+      <h1>Laura Chaves Cerdas</h1>
+      <div class="role-line">Assistant Professor, Health Policy &amp; Management — University of Arkansas for Medical Sciences</div>
+      <div class="contact-row">
+        <span>501-526-6655</span>
+        <a href="mailto:lchavescerdas@uams.edu">lchavescerdas@uams.edu</a>
+        <a href="https://www.linkedin.com/in/laura-chaves-cerdas" target="_blank" rel="noopener">linkedin.com/in/laura-chaves-cerdas</a>
+      </div>
+
+      <div class="trajectory">
+        <div class="trajectory-label">Career trajectory</div>
+        <div class="trail">
+          <div class="stop"><span class="dot"></span><span class="place">San José, CR</span><span class="yr">B.S. Economics · 2014</span></div>
+          <div class="connector"></div>
+          <div class="stop"><span class="dot"></span><span class="place">Atlanta, GA</span><span class="yr">Georgia Tech MSPP · 2018</span></div>
+          <div class="connector"></div>
+          <div class="stop"><span class="dot"></span><span class="place">Reston, VA</span><span class="yr">Neiman HPI · 2018–20</span></div>
+          <div class="connector"></div>
+          <div class="stop"><span class="dot"></span><span class="place">Chapel Hill, NC</span><span class="yr">UNC PhD · 2020–25</span></div>
+          <div class="connector"></div>
+          <div class="stop"><span class="dot"></span><span class="place">Little Rock, AR</span><span class="yr">UAMS · 2025–present</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="positions">
+      <h2><span class="num">01</span> Academic Positions</h2>
+      <div class="entry">
+        <div class="when">Fall 2025–<br>Current</div>
+        <div class="what">
+          <div class="title">Assistant Professor</div>
+          <div class="org">Health Policy and Management Department, University of Arkansas for Medical Sciences</div>
+          <div class="loc">Little Rock, AR</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Fall 2025–<br>Spring 2026</div>
+        <div class="what">
+          <div class="title">Research Fellow</div>
+          <div class="org">Cecil G. Sheps Center for Health Services Research, University of North Carolina</div>
+          <div class="loc">Chapel Hill, NC</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><span class="num">02</span> Education</h2>
+      <div class="entry">
+        <div class="when">May 2025</div>
+        <div class="what">
+          <div class="title">Ph.D. in Public Policy Analysis</div>
+          <div class="org">University of North Carolina, Public Policy Department</div>
+          <div class="loc">Chapel Hill, NC</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">May 2018</div>
+        <div class="what">
+          <div class="title">Master of Science in Public Policy</div>
+          <div class="org">Georgia Institute of Technology, School of Public Policy</div>
+          <div class="loc">Atlanta, GA</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Apr 2014</div>
+        <div class="what">
+          <div class="title">Bachelor of Science in Economics</div>
+          <div class="org">Universidad de Costa Rica, School of Economics</div>
+          <div class="loc">San José, Costa Rica</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2><span class="num">03</span> Research Interests</h2>
+      <div class="tag-row">
+        <span class="tag">health economics</span>
+        <span class="tag">health policy analysis</span>
+        <span class="tag">maternal &amp; infant health</span>
+        <span class="tag">comorbidity prevention</span>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2><span class="num">04</span> Publications</h2>
+      <div class="pub-list">
+        <div class="pub first-author">
+          <div class="yr">2025</div>
+          <div class="cite">
+            <span class="authors">Chaves Cerdas, L.</span> Adequate Prenatal Care and Maternal Morbidity Among Birthing People with Preexisting Comorbidities. <span class="venue">Maternal and Child Health Journal.</span>
+            <br><a href="https://doi-org.libproxy.lib.unc.edu/10.1007/s10995-025-04069-8" target="_blank" rel="noopener">doi.org/10.1007/s10995-025-04069-8 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2021</div>
+          <div class="cite">
+            Hanna, T. N., Friedberg, E., Dequesada, I. M., <span class="authors">Chaves, L.</span>, Pyatt, R., Duszak, R., &amp; Hughes, D. R. Disparities in the Use of Emergency Department Advanced Imaging in Medicare Beneficiaries. <span class="venue">American Journal of Roentgenology, 216(2), 519–525.</span>
+            <br><a href="https://doi.org/10.2214/AJR.20.23161" target="_blank" rel="noopener">doi.org/10.2214/AJR.20.23161 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2021</div>
+          <div class="cite">
+            Wintermark, M., Rosenkrantz, A., Rezaii, P., Fredericks, N., <span class="authors">Chaves, L.</span>, Burleson, J., Haines, G. R., Chatfield, M., Thorwarth, W., Duszak, R., Hughes, D. R. Predicted Cost Savings Achieved by the Radiology Support, Communication, and Alignment Network from Reducing Medical Imaging Overutilization in the Medicare Population. <span class="venue">Journal of the American College of Radiology.</span>
+            <br><a href="https://doi.org/10.1016/j.jacr.2020.12.011" target="_blank" rel="noopener">doi.org/10.1016/j.jacr.2020.12.011 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2021</div>
+          <div class="cite">
+            von Ende, E., Gayou, E. L., Dowell, J. D., Waid, M., <span class="authors">Chaves, L.</span>, Rula, E., Makari, M. S. Nationwide trends in tube-related genitourinary interventions in Medicare beneficiaries. <span class="venue">Journal of the American College of Radiology.</span>
+            <br><a href="https://doi.org/10.1016/j.jacr.2021.04.015" target="_blank" rel="noopener">doi.org/10.1016/j.jacr.2021.04.015 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2020</div>
+          <div class="cite">
+            Rosenkrantz, A. B., <span class="authors">Chaves, L.</span>, Hughes, D. R., Recht, M. P., Nass, S. J., Hricak, H. National Trends in Oncologic Diagnostic Imaging. <span class="venue">Journal of the American College of Radiology.</span>
+            <br><a href="https://doi.org/10.1016/j.jacr.2020.06.001" target="_blank" rel="noopener">doi.org/10.1016/j.jacr.2020.06.001 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2020</div>
+          <div class="cite">
+            Guichet, P. L., Duszak, R., <span class="authors">Chaves Cerdas, L.</span>, Hughes, D. R., Hindman, N., Rosenkrantz, A. B. Changing National Medicare Utilization of Catheter, Computed Tomography, and Magnetic Resonance Extremity Angiography: A Specialty-focused 16-Year Analysis. <span class="venue">Current Problems in Diagnostic Radiology.</span>
+            <br><a href="https://doi.org/10.1067/j.cpradiol.2020.01.005" target="_blank" rel="noopener">doi.org/10.1067/j.cpradiol.2020.01.005 ↗</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2019</div>
+          <div class="cite">
+            Makeeva, V., Hawkins, C. M., Rosenkrantz, A. B., Hughes, D. R., <span class="authors">Chaves, L.</span>, Duszak, R. Diagnostic Imaging Examinations Interpreted by Nurse Practitioners and Physician Assistants: A National and State-Level Medicare Claims Analysis. <span class="venue">AJR Am J Roentgenol, 213(5), 992–997.</span>
+            <br><a href="https://doi.org/10.2214/AJR.19.21306" target="_blank" rel="noopener">doi.org/10.2214/AJR.19.21306 ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="working-papers">
+      <h2><span class="num">05</span> Working Papers</h2>
+      <div class="pub-list">
+        <div class="pub">
+          <div class="yr">2025</div>
+          <div class="cite"><span class="authors">Chaves Cerdas, L.</span> &amp; Brown, C. C. Association between Preexisting Type 1 and Type 2 Diabetes and Severe Maternal Morbidity. <em>In print, AJPM.</em></div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div class="cite"><span class="authors">Chaves Cerdas, L.</span> &amp; Bhai, M. Scope of practice legislation changes and their effect on the provision of evaluation and management services by nurse practitioners in the Medicare population. <em>Submitted 08/04/2026.</em></div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div class="cite"><span class="authors">Chaves Cerdas, L.</span>, Long, C., Vermilion, K., Pirtle, C., Stafford, L., &amp; Brown, C. C. Association of a multi-component health coaching program on health outcomes: A quasi-experimental evaluation. <em>Submitted.</em></div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div class="cite">Kwon, S., Nguyen, R., Thiamwong, N., <span class="authors">Chaves Cerdas, L.</span>, LaManna, J., Magee, M. F., &amp; Ng, B. P. Trends in diabetes self-management education and support participation and sociodemographic disparities, 2017–2023. <em>Submitted.</em></div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div class="cite"><span class="authors">Chaves Cerdas, L.</span>, Weber, K. A., &amp; Thomsen, M. R. School playground characteristics and school-grade obesity prevalence. <em>Submitted.</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="grants">
+      <h2><span class="num">06</span> Funded Research &amp; Programs</h2>
+
+      <div class="entry">
+        <div class="when">Jan 2026–<br>Jun 2026</div>
+        <div class="what">
+          <div class="title">Playground Adequacy for Cardiovascular Disease Risk Reduction in Arkansas (PACORA)</div>
+          <div class="org">Center for Research, Health, and Society (CRHS) Pilot Program — Cycle 7</div>
+          <div class="loc">Role: Principal Investigator · $50,000 · NIH/NIMHD (P50MD017319)</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Sep 2025–<br>Aug 2028</div>
+        <div class="what">
+          <div class="title">CARE-Kids: Advancement of Research and Evidence-Based Models for Kids</div>
+          <div class="org">HRSA Maternal and Child Health Research Consortium (U0A54981) · Ann Chou, PI</div>
+          <div class="desc">Builds a research consortium infrastructure focused on top pediatric conditions and access-to-care issues in Arkansas. Year 1 total costs: $599,999.</div>
+          <div class="loc">Role: Contributor · FTE 5% (10/01/2025–present)</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">2026–<br>2027</div>
+        <div class="what">
+          <div class="title">Prescribing Power: How Pharmacist Prescribing Policies Shape Contraceptive Outcomes</div>
+          <div class="org">Arnold Ventures · Moiz Bhai, PI · Total costs $416,596</div>
+          <div class="desc">Examines how state-level pharmacist prescribing policies affect contraceptive access and utilization.</div>
+          <div class="loc">Role: Co-Investigator and Site-PI for UAMS · Pending start date</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Nov 2025–<br>May 2026</div>
+        <div class="what">
+          <div class="title">Evaluation of Virtual Health Coaching Program</div>
+          <div class="org">Heartland Whole Health Institute · Clare Brown, PI · $25,000</div>
+          <div class="desc">Analyzes engagement and program utilization among ~350 Community Clinic patients with chronic disease enrolled in Newtopia's virtual health coaching program; assesses PROMIS scores, biometrics, and utilization; estimates cost impacts.</div>
+          <div class="loc">Role: Lead Analyst</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="presentations">
+      <h2><span class="num">07</span> Presentations</h2>
+      <div class="entry">
+        <div class="when">2025</div>
+        <div class="what">
+          <div class="title">Association between Preexisting Type 1 and Type 2 Diabetes and Severe Maternal Morbidity</div>
+          <div class="org">State-University Partnership Learning Network (SUPLN) Annual Fall Meeting</div>
+          <div class="loc">Washington, DC</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2024</div>
+        <div class="what">
+          <div class="title">Non-financial barriers and their influence on intent to get care by older adults</div>
+          <div class="org">Association for Public Policy Analysis and Management (APPAM) Annual Meeting</div>
+          <div class="loc">National Harbor, MD</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2022</div>
+        <div class="what">
+          <div class="title">Disparities in Access: Advanced Medical Imaging in Rural and Critical Access Hospitals</div>
+          <div class="org">American Society of Health Economists (ASHEcon) Conference</div>
+          <div class="loc">Austin, TX</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2021</div>
+        <div class="what">
+          <div class="title">Disparities in Access: Advanced Medical Imaging in Rural and Critical Access Hospitals</div>
+          <div class="org">Southern Economic Association (SEA) Annual Meeting</div>
+          <div class="loc">Houston, TX</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2019</div>
+        <div class="what">
+          <div class="title">Disparities in Access: Advanced Medical Imaging in Rural Settings</div>
+          <div class="org">American Public Health Association (APHA) Annual Meeting</div>
+          <div class="loc">Philadelphia, PA</div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:2rem;">
+        <div>
+          <h3 style="font-size:1rem; margin-bottom:0.6rem;">Invited Lectures</h3>
+          <div style="font-size:0.88rem; color:var(--ink-soft);">
+            Guest Lecturer, Advanced Methods in Health Services Research — UAMS Fay W. Boozman College of Public Health, Fall 2025.
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:1rem; margin-bottom:0.6rem;">Awards</h3>
+          <div style="font-size:0.88rem; color:var(--ink-soft);">
+            Impact Award, UNC Chapel Hill (2025) — recognizing outstanding graduate research contributing to the well-being of North Carolina residents. Certificate and $500 award.
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size:1rem; margin-top:2rem; margin-bottom:0.6rem;">Posters</h3>
+      <ul style="font-size:0.88rem; color:var(--ink-soft); padding-left:1.1rem;">
+        <li>Playground Adequacy for Cardiovascular Disease Risk Reduction in Arkansas (PACORA) — American Community Garden Association Annual Meeting, Little Rock, AR, 2026</li>
+        <li>Hobbs, G., Chaves-Cerdas, L., Allen, J. L. Sociodemographic Disparities in Survivorship Among Adults Diagnosed with Cancer Before Age 18 — Winthrop P. Rockefeller Cancer Institute Research Retreat, Little Rock, AR, 2026 <em>(mentored student presentation)</em></li>
+        <li>Playground Adequacy for Cardiovascular Disease Risk Reduction in Arkansas (PACORA) — Health Excellence Action Network Annual Meeting, Online, 2026</li>
+        <li>Disparities in Access: Advanced Medical Imaging in Rural Settings — American Society of Health Economists (ASHE) Conference, Washington, DC, 2019</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2><span class="num">08</span> Teaching Experience</h2>
+      <div class="entry">
+        <div class="when">2026–<br>Present</div>
+        <div class="what">
+          <div class="title">University of Arkansas for Medical Sciences — Health Policy and Management</div>
+          <div class="loc">Little Rock, AR</div>
+          <ul>
+            <li>HPMT 51053 Introduction to Health Economics (Spring 2026)</li>
+            <li>HPMT 51033 The Healthcare System (Fall 2026)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2020–<br>2025</div>
+        <div class="what">
+          <div class="title">University of North Carolina — Public Policy Department</div>
+          <div class="loc">Chapel Hill, NC</div>
+          <ul>
+            <li>Teaching Fellow, PLCY 310 Microeconomic Foundations of Public Policy (Summer &amp; Fall 2024)</li>
+            <li>Graduate TA, PLCY 220 Politics of Public Policy (Spring 2024), PLCY 210 Policy Innovation and Analysis (Spring 2021), PLCY 581 Research Design (Fall 2021, Spring 2022), PLCY 110 Global Policy Issues (Fall 2020)</li>
+            <li>Graduate TA, PLCY 882/HPM 882 Advanced Methodology for Public Policy / Health Policy Management — econometric techniques (Fall 2023)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2016–<br>2017</div>
+        <div class="what">
+          <div class="title">Georgia Institute of Technology — School of Public Policy</div>
+          <div class="loc">Atlanta, GA</div>
+          <ul>
+            <li>Graduate TA, PHIL 3109 Engineering Ethics</li>
+            <li>Graduate TA, PHIL 3127 Science, Technology and Human Values</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="relevant-experience">
+      <h2><span class="num">09</span> Relevant Experience</h2>
+      <div class="entry">
+        <div class="when">2020–<br>2025</div>
+        <div class="what">
+          <div class="title">Cecil G. Sheps Center for Health Services Research</div>
+          <div class="loc">Chapel Hill, NC</div>
+          <ul>
+            <li>Graduate Research Assistant, THiNC (Spring 2025) — PI: Dr. Valerie Lewis</li>
+            <li>Carolina Population Center — property tax exemptions for elderly populations across 35 U.S. states (Summer 2022, 2023) — PI: Dr. Jeremy Moulton</li>
+            <li>UNC Frank Porter Graham Child Development Institute (Fall 2022, Spring 2023) — PI: Dr. Iheoma Iruka</li>
+            <li>Collaborative for Infant and Maternal Health, UNC School of Medicine — Health Information Analyst, EHR (EPIC) &amp; Tableau analytics (Spring/Fall 2021)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2018–<br>2020</div>
+        <div class="what">
+          <div class="title">Harvey L. Neiman Health Policy Institute</div>
+          <div class="org">Research Associate</div>
+          <div class="loc">Reston, VA</div>
+          <div class="desc">Medicare data analytics (5% RIF claim files); manuscript writing for peer-reviewed submission.</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2017–<br>2018</div>
+        <div class="what">
+          <div class="title">Center for Education Integrating Science, Mathematics &amp; Computing (CEISMC)</div>
+          <div class="loc">Atlanta, GA</div>
+          <div class="desc">Graduate Research Assistant, GoSTEM Program &amp; Evaluation Team (Fall 2017–Spring 2018); Education Research and Evaluation Intern (Summer 2017).</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <h2><span class="num">10</span> Service</h2>
+
+      <h3 style="font-size:1rem; margin-bottom:0.8rem;">Institutional Service — UAMS Fay W. Boozman College of Public Health</h3>
+      <ul style="font-size:0.9rem; color:var(--ink-soft); padding-left:1.1rem; margin-top:0;">
+        <li>Committee Member, MPH Program Curriculum Committee</li>
+        <li>Course reviewer, HPMT 51053 Introduction to Health Economics — MPH program self-study, 2026–present</li>
+      </ul>
+
+      <h3 style="font-size:1rem; margin:1.6rem 0 0.8rem;">Department of Health Policy and Management</h3>
+      <ul style="font-size:0.9rem; color:var(--ink-soft); padding-left:1.1rem; margin-top:0;">
+        <li>Committee Member, Integrated Learning Experience, MPH Program (Chair: Dr. Mimi L. Allen) — Spring 2026, Gabriella A. Hobbs</li>
+        <li>Search Committee Member, Non-Tenure Track Assistant Professor, Master of Health Administration — 2025–present</li>
+        <li>Mentoring Committee Member, Ph.D. student Tanvangi Tiwari (Chair: Dr. Clare C. Brown) — 2025–present</li>
+        <li>Evaluation Committee Member, Master of Health Administration — 2025–present</li>
+      </ul>
+
+      <h3 style="font-size:1rem; margin:1.6rem 0 0.8rem;">Journal Refereeing</h3>
+      <div class="tag-row" style="margin-top:0;">
+        <span class="tag">Pediatrics &amp; Neonatology</span>
+        <span class="tag">Frontiers in Endocrinology</span>
+        <span class="tag">Psychiatric Research and Clinical Practice</span>
+        <span class="tag">Family Medicine and Community Health</span>
+        <span class="tag">Health Promotion Practice</span>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><span class="num">11</span> Skills, Certifications &amp; Languages</h2>
+
+      <div class="two-col">
+        <div>
+          <h3 style="font-size:1rem; margin-bottom:0.6rem;">Software</h3>
+          <div class="tag-row" style="margin-top:0;">
+            <span class="tag">Stata</span><span class="tag">SAS</span><span class="tag">R</span>
+            <span class="tag">Tableau</span><span class="tag">ArcGIS</span><span class="tag">SPSS</span><span class="tag">SurveyMonkey</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:1rem; margin-bottom:0.6rem;">Languages</h3>
+          <div style="font-size:0.9rem; color:var(--ink-soft); line-height:1.8;">
+            Spanish (native) · English (advanced) · Portuguese (advanced) · German (basic) · Greek (basic)
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size:1rem; margin:1.8rem 0 0.8rem;">Certifications &amp; Professional Development</h3>
+      <div class="entry" style="grid-template-columns:90px 1fr;">
+        <div class="when">2019</div>
+        <div class="what">
+          <div class="title">Specialized Certificate in Geographic Information Systems (GIS)</div>
+          <div class="loc">University of California San Diego, Extension Online · 150 hours of study</div>
+        </div>
+      </div>
+      <div class="entry" style="grid-template-columns:90px 1fr;">
+        <div class="when">2025</div>
+        <div class="what">
+          <div class="title">Applying the QM Rubric, 7th Edition</div>
+          <div class="loc">Quality Matters, Online</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      Last updated August 2026. Built with GitHub Pages.
+    </div>
+
+  </main>
+</div>
+
+<script>
+  // Highlight active section in sidebar nav on scroll
+  const links = document.querySelectorAll('nav.toc a');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
+  function onScroll(){
+    let idx = sections.findIndex((s,i) => {
+      if(!s) return false;
+      const rect = s.getBoundingClientRect();
+      return rect.top <= 120 && (sections[i+1] ? sections[i+1].getBoundingClientRect().top > 120 : true);
+    });
+    links.forEach(l => l.classList.remove('active'));
+    if(idx >= 0 && links[idx]) links[idx].classList.add('active');
+  }
+  document.addEventListener('scroll', onScroll);
+  onScroll();
+</script>
+
+</body>
+</html>
